@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+		<title>
+			Registration Form
+		</title>
+		<style>
+			div{
+				width: 260px;
+				border: 1px solid black;
+				padding: 20px;
+				margin: 20px;
+				font-family: 'Oswald';
+				background-color: white;
+				border-radius: 5px;
+				display: block;
+				text-align: center;
+			}
+			form{
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: left;
+			}
+			input[type=text], input[type=date], textarea {
+				width: 100%;
+			}
+			input[type=submit]{
+				background-color: green;
+				color: white;
+				padding: 6px 10px;
+				margin: 5px 4px 2px 0.1px;
+				border: 1px green;
+			}
+			input[type=reset]{
+				background-color: red;
+				color: white;
+				padding: 6px 20px;
+				margin: 5px 4px;
+				border: 1px red;
+			}
+			body{
+				text-align: center;
+				background-color: lightslategrey;
+			}
+		</style>
+	</head>
+    <body>
+		<div>
+        <h1>Registration Form</h1>
+			<form>
+				First Name: <br><input type="Text" name="firstname"/><br>
+				Last Name: <br><input type="Text" name="lastname"/><br>
+				Nickname: <br><input type="Text" name="nickname"/><br>
+				Email: <br><input type="Text" name="email"/><br>
+				Password: <br><input type="Text" name="password"/><br>
+				Date of Birth: <br><input type="Date" name="dateofbirth"/><br>
+				Gender:<br> 
+					<input type="checkbox" name="male"/> Male
+					<input type="checkbox" name="female"/> Female
+					<input type="checkbox" name="other"/> Other
+				<br>
+				Mobile: <br><input type="Text" name="password"/><br>
+				Address: <br><textarea name="description" cols="30" rows="10"></textarea><br>
+				<input type="submit" name="submit"/><input type="Reset" name="reset"/><br>
+			</form>
+		</div>		
+    </body>
+</html>
